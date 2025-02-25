@@ -1,160 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FACEZ</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8"> <!-- Define el conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la vista para dispositivos móviles -->
+    <title>FACEZ</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!-- Enlace a la hoja de estilos de Bootstrap -->
+    <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css”/>
+    <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css” />
+    <link href="style.css" rel="stylesheet"> <!-- Enlace a la hoja de estilos personalizada -->
 </head>
 
 <body>
     <!-- Nav -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary b5-navbar-default" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#index.html">
-                <img src="https://i.pinimg.com/736x/73/24/da/7324daee0903190950b8aa7ad2edbf2d.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary b5-navbar-default" data-bs-theme="dark"> <!-- Barra de navegación con tema oscuro -->
+        <div class="container-fluid"> <!-- Contenedor fluido para la barra de navegación -->
+            <a class="navbar-brand" href="#index.html"> <!-- Enlace a la página principal -->
+                <img src="https://i.pinimg.com/736x/73/24/da/7324daee0903190950b8aa7ad2edbf2d.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"> <!-- Logo de la marca -->
                 FACEZ
             </a>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-              <button class="btn btn-primary" type="submit">Buscar</button>
+            <form class="d-flex" role="search"> <!-- Formulario de búsqueda -->
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar"> <!-- Campo de entrada para búsqueda -->
+              <button class="btn btn-primary" type="submit">Buscar</button> <!-- Botón para enviar la búsqueda -->
             </form>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <!-- Botón para colapsar la barra de navegación en dispositivos pequeños -->
+                <span class="navbar-toggler-icon"></span> <!-- Icono del botón de colapso -->
             </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link active" href="#index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link active" href="#">About Us</a></li>
-              <li class="nav-item"><a class="nav-link active" href="#productsSection">Products</a></li>
-              <li class="nav-item"><a class="nav-link active" href="#">Contact</a></li>
+          <div class="collapse navbar-collapse" id="navbarNav"> <!-- Contenido colapsable de la barra de navegación -->
+            <ul class="navbar-nav"> <!-- Lista de elementos de navegación -->
+              <li class="nav-item"><a class="nav-link active" href="#index.html">Home</a></li> <!-- Enlace a la página principal -->
+              <li class="nav-item"><a class="nav-link active" href="#">About Us</a></li> <!-- Enlace a la sección "Sobre nosotros" -->
+              <li class="nav-item"><a class="nav-link active" href="#productsSection">Products</a></li> <!-- Enlace a la sección de productos -->
+              <li class="nav-item"><a class="nav-link active" href="#">Contact</a></li> <!-- Enlace a la sección de contacto -->
             </ul>
           </div>
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="dropdown"> <!-- Menú desplegable -->
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> <!-- Botón del menú desplegable -->
               Mi Cuenta
             </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal">Ingresar</a></li>
-              <li><a class="dropdown-item" href="#">Registro</a></li>
-              <li><a class="dropdown-item" href="#">Mis Pedidos</a></li>
+            <ul class="dropdown-menu"> <!-- Contenido del menú desplegable -->
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalLogin">Ingresar</a></li> <!-- Enlace para abrir el modal de inicio de sesión -->
+              <li><a class="dropdown-item" href="#">Registro</a></li> <!-- Enlace a la página de registro -->
+              <li><a class="dropdown-item" href="#">Mis Pedidos</a></li> <!-- Enlace a la sección de pedidos -->
             </ul>
           </div>
         </div>
     </nav>
 
     <!-- Carrusel -->
-    <div class="container-fluid p-0 m-0">
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div class="container-fluid p-0 m-0"> <!-- Contenedor para el carrusel -->
+        <div id="carouselExampleIndicators" class="carousel slide"> <!-- Carrusel de Bootstrap -->
+            <div class="carousel-indicators"> <!-- Indicadores del carrusel -->
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> <!-- Indicador para el primer slide -->
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button> <!-- Indicador para el segundo slide -->
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> <!-- Indicador para el tercer slide -->
             </div>
 
-            <div class="carousel-inner">
+            <div class="carousel-inner"> <!-- Contenido del carrusel -->
                 <!-- Slide 1 -->
-                <div class="carousel-item active">
-                    <div class="d-flex justify-content-center align-items-center carousel-slide-container">
-                        <img src="https://cdn.pixabay.com/photo/2022/03/11/10/29/man-7061820_1280.jpg" class="img-fluid" alt="Imagen 1">
-                        <img src="https://cdn.pixabay.com/photo/2020/10/26/18/04/girl-5688103_1280.jpg" class="img-fluid" alt="Imagen 2">
+                <div class="carousel-item active"> <!-- Primer slide activo -->
+                    <div class="d-flex justify-content-center align-items-center carousel-slide-container"> <!-- Contenedor para centrar el contenido del slide -->
+                        <img src="https://cdn.pixabay.com/photo/2022/03/11/10/29/man-7061820_1280.jpg" class="img-fluid" alt="Imagen 1"> <!-- Imagen del primer slide -->
+                        <img src="https://cdn.pixabay.com/photo/2020/10/26/18/04/girl-5688103_1280.jpg" class="img-fluid" alt="Imagen 2"> <!-- Imagen del primer slide -->
                     </div>
                 </div>
 
                 <!-- Slide 2 -->
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center align-items-center carousel-slide-container">
-                        <img src="https://cdn.pixabay.com/photo/2022/02/05/17/57/young-man-6995464_1280.jpg" class="img-fluid" alt="Imagen 3">
-                        <img src="https://cdn.pixabay.com/photo/2020/09/10/06/01/model-5559396_1280.jpg" class="img-fluid" alt="Imagen 4">
+                <div class="carousel-item"> <!-- Segundo slide -->
+                    <div class="d-flex justify-content-center align-items-center carousel-slide-container"> <!-- Contenedor para centrar el contenido del slide -->
+                        <img src="https://cdn.pixabay.com/photo/2022/02/05/17/57/young-man-6995464_1280.jpg" class="img-fluid" alt="Imagen 3"> <!-- Imagen del segundo slide -->
+                        <img src="https://cdn.pixabay.com/photo/2020/09/10/06/01/model-5559396_1280.jpg" class="img-fluid" alt="Imagen 4"> <!-- Imagen del segundo slide -->
                     </div>
                 </div>
                 
                 <!-- Slide 3 -->
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center align-items-center carousel-slide-container">
-                        <img src="https://cdn.pixabay.com/photo/2021/02/11/17/44/balenciaga-6005971_1280.jpg" class="img-fluid" alt="Imagen 3">
-                        <img src="https://cdn.pixabay.com/photo/2024/12/07/02/08/dance-9250032_1280.png" class="img-fluid" alt="Imagen 4">
+                <div class="carousel-item"> <!-- Tercer slide -->
+                    <div class="d-flex justify-content-center align-items-center carousel-slide-container"> <!-- Contenedor para centrar el contenido del slide -->
+                        <img src="https://cdn.pixabay.com/photo/2021/02/11/17/44/balenciaga-6005971_1280.jpg" class="img-fluid" alt="Imagen 3"> <!-- Imagen del tercer slide -->
+                        <img src="https://cdn.pixabay.com/photo/2024/12/07/02/08/dance-9250032_1280.png" class="img-fluid" alt="Imagen 4"> <!-- Imagen del tercer slide -->
                     </div>
                 </div>
             </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"> <!-- Botón para ir al slide anterior -->
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span> <!-- Icono del botón anterior -->
+                <span class="visually-hidden">Previous</span> <!-- Texto oculto para accesibilidad -->
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"> <!-- Botón para ir al siguiente slide -->
+                <span class="carousel-control-next-icon" aria-hidden="true"></span> <!-- Icono del botón siguiente -->
+                <span class="visually-hidden">Next</span> <!-- Texto oculto para accesibilidad -->
             </button>
         </div>
 
         <hr>
-        <!--Product section-->
-        <div id="productsSection" class="container-fluid products-section">
-            <div class="row products-section-title">
-                <h2>Products</h2>
+        <!--Sección de productos-->
+        <div id="productsSection" class="container-fluid products-section"> <!-- Sección de productos -->
+            <div class="row products-section-title"> <!-- Título de la sección de productos -->
+                <h2>Products</h2> <!-- Título de la sección -->
             </div>
-            <div class="row">
-                <div class="col">
-                    <div class="card mt-2" style="width: 16rem;">
-                        <img src="https://cdn.pixabay.com/photo/2021/02/11/17/44/balenciaga-6005971_1280.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Balenciaga Triple S</h5>
-                          <p class="card-text">Encuentra la combinación perfecta entre comfort y elegancia con los White Balenciaga Sneakers.</p>
-                          <a href="#" class="btn  btn-secondary">Ver más</a>
+            <div class="row"> <!-- Fila de productos -->
+                <div class="col"> <!-- Columna para el primer producto -->
+                    <div class="card mt-2" style="width: 16rem;"> <!-- Tarjeta para el producto -->
+                        <img src="https://cdn.pixabay.com/photo/2021/02/11/17/44/balenciaga-6005971_1280.jpg" class="card-img-top" alt="..."> <!-- Imagen del producto -->
+                        <div class="card-body"> <!-- Cuerpo de la tarjeta -->
+                          <h5 class="card-title">Balenciaga Triple S</h5> <!-- Título del producto -->
+                          <p class="card-text">Encuentra la combinación perfecta entre comfort y elegancia con los White Balenciaga Sneakers.</p> <!-- Descripción del producto -->
+                          <a href="#" class="btn  btn-secondary">Ver más</a> <!-- Botón para ver más detalles -->
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card mt-2" style="width: 16rem;">
-                        <img src="https://cdn.pixabay.com/photo/2021/02/09/20/04/cinder-5999809_1280.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Yeezy Boost 350 V2</h5>
-                          <p class="card-text">Encuentra la combinación perfecta entre comfort y elegancia con los White Balenciaga Sneakers.</p>
-                          <a href="#" class="btn  btn-secondary">Ver más</a>
+                <div class="col"> <!-- Columna para el segundo producto -->
+                    <div class="card mt-2" style="width: 16rem;"> <!-- Tarjeta para el producto -->
+                        <img src="https://cdn.pixabay.com/photo/2021/02/09/20/04/cinder-5999809_1280.jpg" class="card-img-top" alt="..."> <!-- Imagen del producto -->
+                        <div class="card-body"> <!-- Cuerpo de la tarjeta -->
+                          <h5 class="card-title">Yeezy Boost 350 V2</h5> <!-- Título del producto -->
+                          <p class="card-text">Encuentra la combinación perfecta entre comfort y elegancia con los White Balenciaga Sneakers.</p> <!-- Descripción del producto -->
+                          <a href="#" class="btn  btn-secondary">Ver más</a> <!-- Botón para ver más detalles -->
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card mt-2" style="width: 16rem;">
-                        <img src="https://cdn.pixabay.com/photo/2019/10/26/09/50/shoes-4579068_1280.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">White Balenciaga Sneakers</h5>
-                          <p class="card-text">Encuentra la combinación perfecta entre comfort y elegancia con los White Balenciaga Sneakers.</p>
-                          <a href="#" class="btn  btn-secondary">Ver más</a>
+                <div class="col"> <!-- Columna para el tercer producto -->
+                    <div class="card mt-2" style="width: 16rem;"> <!-- Tarjeta para el producto -->
+                        <img src="https://cdn.pixabay.com/photo/2019/10/26/09/50/shoes-4579068_1280.jpg" class="card-img-top" alt="..."> <!-- Imagen del producto -->
+                        <div class="card-body"> <!-- Cuerpo de la tarjeta -->
+                          <h5 class="card-title">White Balenciaga Sneakers</h5> <!-- Título del producto -->
+                          <p class="card-text">Encuentra la combinación perfecta entre comfort y elegancia con los White Balenciaga Sneakers.</p> <!-- Descripción del producto -->
+                          <a href="#" class="btn  btn-secondary">Ver más</a> <!-- Botón para ver más detalles -->
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card mt-2" style="width: 16rem;">
-                        <img src="https://cdn.pixabay.com/photo/2021/05/28/09/53/sneakers-6290385_1280.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">White Balenciaga Sneakers</h5>
-                          <p class="card-text">Encuentra la combinación perfecta entre comfort y elegancia con los White Balenciaga Sneakers.</p>
-                          <a href="#" class="btn  btn-secondary">Ver más</a>
+                <div class="col"> <!-- Columna para el cuarto producto -->
+                    <div class="card mt-2" style="width: 16rem;"> <!-- Tarjeta para el producto -->
+                        <img src="https://cdn.pixabay.com/photo/2021/05/28/09/53/sneakers-6290385_1280.jpg" class="card-img-top" alt="..."> <!-- Imagen del producto -->
+                        <div class="card-body"> <!-- Cuerpo de la tarjeta -->
+                          <h5 class="card-title">White Balenciaga Sneakers</h5> <!-- Título del producto -->
+                          <p class="card-text">Encuentra la combinación perfecta entre comfort y elegancia con los White Balenciaga Sneakers.</p> <!-- Descripción del producto -->
+                          <a href="#" class="btn  btn-secondary">Ver más</a> <!-- Botón para ver más detalles -->
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card mt-2" style="width: 16rem;">
-                        <img src="https://cdn.pixabay.com/photo/2020/07/15/18/21/shoe-5408627_1280.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Consortium FYW XTA</h5>
-                          <p class="card-text">Encuentra la combinación perfecta entre comfort y elegancia con los White Balenciaga Sneakers.</p>
-                          <a href="#" class="btn btn-secondary">Ver más</a>
+                <div class="col"> <!-- Columna para el quinto producto -->
+                    <div class="card mt-2" style="width: 16rem;"> <!-- Tarjeta para el producto -->
+                        <img src="https://cdn.pixabay.com/photo/2020/07/15/18/21/shoe-5408627_1280.png" class="card-img-top" alt="..."> <!-- Imagen del producto -->
+                        <div class="card-body"> <!-- Cuerpo de la tarjeta -->
+                          <h5 class="card-title">Consortium FYW XTA</h5> <!-- Título del producto -->
+                          <p class="card-text">Encuentra la combinación perfecta entre comfort y elegancia con los White Balenciaga Sneakers.</p> <!-- Descripción del producto -->
+                          <a href="#" class="btn btn-secondary">Ver más</a> <!-- Botón para ver más detalles -->
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                    <div class="b5-pagination-default">
-                        <div class="btn-group d-flex justify-content-center" role="group">
-                        <a href="#" class="btn btn-secondary" aria-current="page">Previous</a>
-                        <a href="#" class="btn btn-secondary">1</a>
-                        <a href="#" class="btn btn-secondary">2</a>
-                        <a href="#" class="btn btn-secondary">3</a>
-                        <a href="#" class="btn btn-secondary">Next</a>
+            <div class="row"> <!-- Fila para la paginación -->
+                    <div class="b5-pagination-default"> <!-- Contenedor para la paginación -->
+                        <div class="btn-group d-flex justify-content-center" role="group"> <!-- Grupo de botones para la paginación -->
+                        <a href="#" class="btn btn-secondary" aria-current="page">Previous</a> <!-- Botón para la página anterior -->
+                        <a href="#" class="btn btn-secondary">1</a> <!-- Botón para la página 1 -->
+                        <a href="#" class="btn btn-secondary">2</a> <!-- Botón para la página 2 -->
+                        <a href="#" class="btn btn-secondary">3</a> <!-- Botón para la página 3 -->
+                        <a href="#" class="btn btn-secondary">Next</a> <!-- Botón para la siguiente página -->
                       </div>
                 </div>
             </div>
@@ -162,43 +164,109 @@
 
     </div>
 
-    <!--Login modal-->
-    <div class="modal" id="exampleModal" tabindex="-1">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Ingresar</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!--Modal de inicio de sesión-->
+    <div class="modal" id="modalLogin" tabindex="-1"> <!-- Modal para el inicio de sesión -->
+        <div class="modal-dialog"> <!-- Diálogo del modal -->
+          <div class="modal-content"> <!-- Contenido del modal -->
+            <div class="modal-header"> <!-- Encabezado del modal -->
+              <h5 class="modal-title">Ingresar</h5> <!-- Título del modal -->
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!-- Botón para cerrar el modal -->
             </div>
-            <div class="modal-body">
-              <p>Modal body text goes here.</p>
+            <div class="modal-body"> <!-- Cuerpo del modal -->
+                <form class="loginForm"> <!-- Formulario de inicio de sesión -->
+                    <div class="form-group"> <!-- Grupo de formulario para el correo -->
+                        <h6>Usuario</h6>
+                        <div class="input-group mb-3">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Ingresa tu correo">
+                                <label for="floatingInputGroup1">Ingresa tu correo</label>
+                            </div>
+                            <span class="input-group-text">@</span>
+                          </div>
+                    </div>
+                    <div class="form-group"> <!-- Grupo de formulario para la contraseña -->
+                        <h6>Contraseña</h6>
+                        <div class="input-group mb-3">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Ingresa tu contraseña">
+                                <label for="floatingInputGroup1">Ingresa tu contraseña</label>
+                            </div>
+                            <span class="input-group-text">(°)</span>
+                          </div>
+                    </div>
+                    <div class="checkbox"> <!-- Grupo de casilla de verificación -->
+                        <label><input type="checkbox" value="" checked>Recordar mi usuario</label> <!-- Casilla para recordar el usuario -->
+                    </div>
+                        <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button> <!-- Botón para iniciar sesión -->
+                </form>
             </div>
-            <div class="modal-footer">
-                <p>¿No tienes cuenta? </p>
-                <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">¡Regístrate aquí!</a>
+            <div class="modal-footer"> <!-- Pie del modal -->
+                <p>¿No tienes cuenta? </p> <!-- Texto para invitar a registrarse -->
+                <a href="" data-bs-toggle="modal" data-bs-target="#modalUserRegister">¡Regístrate aquí!</a> <!-- Enlace para abrir el modal de registro -->
             </div>
           </div>
         </div>
       </div>
-
+      
+    <div class="modal" id="modalUserRegister" tabindex="1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Regístrate</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label></button>
+                </div>
+                <div class="modal-body">
+                    <form class="registerForm">
+                        <div class="form-group">
+                            <h6>Ingresa tus datos</h6>
+                            <hr>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="fiName" placeholder="Ingresa tu nombre">
+                                <label for="fiName">Ingresa tu nombre</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="fiLastName" placeholder="Ingresa tus apellidos">
+                                <label for="fiLastName">Ingresa tus apellidos</label>
+                            </div>
+                            <h6>Ingresa tu usuario y contraseña</h6>
+                            <hr>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="Ingresa tu correo">
+                                <label for="floatingInput">Ingresa tu correo</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Ingresa tu contraseña">
+                                <label for="floatingPassword">Ingresa tu contraseña</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Confirma tu contraseña">
+                                <label for="floatingPassword">Confirma tu contraseña</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+      
 </body>
 
 <hr>
 <footer>
-    <div class="container-fluid footer">
-        <div class="row">
-            <div class="container-fluid">
-                <h5>FACEZ MX</h5>
-                <p>Correo electrónico: <a href="mailto:customer-service@facez.com">
+    <div class="container-fluid footer"> <!-- Contenedor para el pie de página -->
+        <div class="row"> <!-- Fila en el pie de página -->
+            <div class="container-fluid"> <!-- Contenedor fluido en el pie de página -->
+                <h5>FACEZ MX</h5> <!-- Título del pie de página -->
+                <p>Correo electrónico: <a href="mailto:customer-service@facez.com"> <!-- Enlace para enviar un correo -->
                     customer-service@facez.com</a>
-                <p>Tel: +52 332-840-4624</p>
-                <p>Horario de atención: Lunes a Viernes de 9:00 am a 6:00 pm</p>
-                <p>Ubicación: Guadalajara, Jalisco, México</p>
-                <p>Copyright 2025 FACEZ</p>
+                <p>Tel: +52 332-840-4624</p> <!-- Número de teléfono -->
+                <p>Horario de atención: Lunes a Viernes de 9:00 am a 6:00 pm</p> <!-- Horario de atención -->
+                <p>Ubicación: Guadalajara, Jalisco, México</p> <!-- Ubicación de la empresa -->
+                <p>Copyright 2025 FACEZ</p> <!-- Información de derechos de autor -->
             </div>
         </div>
     </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> <!-- Enlace al script de Bootstrap -->
 </html>
