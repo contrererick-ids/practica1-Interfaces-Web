@@ -10,6 +10,12 @@ body{
     color: rgb(255, 112, 30);
 }
 
+.d-flex button:hover{
+    background-color: rgb(255, 112, 30);
+    border-color: rgb(40,40,40);
+    color: rgb(40,40,40);
+}
+
 .btn-primary{
     background-color: rgba(255,112,30);
     border-color: rgb(30, 30, 30);
@@ -20,6 +26,12 @@ body{
     background-color: rgba(255,112,30);
     border-color: rgba(30,30,30);
     color: rgba(30,30,30);
+}
+
+.b5-pagination-default a:hover{
+    background-color: rgba(230,230,230);
+    border-color: rgb(30, 30, 30);
+    color: rgb(30,30,30);
 }
 
 hr{
