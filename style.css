@@ -132,3 +132,25 @@ hr{
     border-color: rgb(255, 112, 30);
     color: rgb(255, 112, 30);
 }
+
+#shoppingCart{
+    width: 100%;
+    background-color: rgb(230,230,230);
+    padding: 10px;
+}
+
+#shoppingCart h1{
+    text-align: center;
+}
+
+#shoppingCart .media-body{
+    width: 100%;
+}
+
+#shoppingCart h5{
+    text-align: left;
+}
+
+#shoppingCart img{
+    max-width: 150px;
+}
