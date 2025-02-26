@@ -137,7 +137,7 @@ hr{
     padding: 10px;
 }
 
-#shoppingCart .d-flex{
+#shoppingCart .cart-list, .order-summary{
     border: 1px solid rgb(255,112,30);
     padding: 10px;
 }
