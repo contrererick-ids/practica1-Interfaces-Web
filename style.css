@@ -4,31 +4,31 @@ body{
     padding: 0;
 }
 
-.d-flex button{
+nav .d-flex button{
     background-color: rgba(40,40,40);
     border-color: rgb(255, 112, 30);
     color: rgb(255, 112, 30);
 }
 
-.d-flex button:hover{
+nav .d-flex button:hover{
     background-color: rgb(255, 112, 30);
     border-color: rgb(40,40,40);
     color: rgb(40,40,40);
 }
 
-.btn-primary{
+.search-bar-button{
     background-color: rgba(255,112,30);
     border-color: rgb(30, 30, 30);
     color: rgb(30, 30, 30);
 }
 
-.btn-secondary{
+.dropdown-toggle, .see-more-button, .pagination-products a{
     background-color: rgba(255,112,30);
     border-color: rgba(30,30,30);
     color: rgba(30,30,30);
 }
 
-.b5-pagination-default a:hover{
+.pagination-products a:hover{
     background-color: rgba(230,230,230);
     border-color: rgb(30, 30, 30);
     color: rgb(30,30,30);
@@ -76,7 +76,7 @@ hr{
     object-fit: cover;
 }
 
-.b5-pagination-default{
+.pagination-products{
     padding: 20px;
 }
 
@@ -143,14 +143,12 @@ hr{
     text-align: center;
 }
 
-#shoppingCart .media-body{
-    width: 100%;
-}
-
-#shoppingCart h5{
-    text-align: left;
-}
-
 #shoppingCart img{
-    max-width: 150px;
+    max-width: 200px;
+    padding: 10px;
+}
+
+#shoppingCart .d-flex{
+    border: 1px solid rgb(255,112,30);
+    padding: 10px;
 }
