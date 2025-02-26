@@ -28,7 +28,7 @@
           <div class="collapse navbar-collapse" id="navbarNav"> <!-- Contenido colapsable de la barra de navegación -->
             <ul class="navbar-nav"> <!-- Lista de elementos de navegación -->
               <li class="nav-item"><a class="nav-link active" href="#index.html">Home</a></li> <!-- Enlace a la página principal -->
-              <li class="nav-item"><a class="nav-link active" href="#">About Us</a></li> <!-- Enlace a la sección "Sobre nosotros" -->
+              <li class="nav-item"><a class="nav-link active" data-bs-toggle="modal" data-bs-target="#modalUserRegister">Registro</a></li> <!-- Enlace a la sección "Sobre nosotros" -->
               <li class="nav-item"><a class="nav-link active" href="#productsSection">Products</a></li> <!-- Enlace a la sección de productos -->
               <li class="nav-item"><a class="nav-link active" href="#">Contact</a></li> <!-- Enlace a la sección de contacto -->
             </ul>
@@ -197,7 +197,7 @@
                     <div class="checkbox"> <!-- Grupo de casilla de verificación -->
                         <label><input type="checkbox" value="" checked>Recordar mi usuario</label> <!-- Casilla para recordar el usuario -->
                     </div>
-                        <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button> <!-- Botón para iniciar sesión -->
+                        <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span>Login</button> <!-- Botón para iniciar sesión -->
                 </form>
             </div>
             <div class="modal-footer"> <!-- Pie del modal -->
@@ -212,38 +212,41 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Regístrate</h5>
+                    <h4 class="modal-title">Regístrate</h4>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label></button>
                 </div>
                 <div class="modal-body">
                     <form class="registerForm">
                         <div class="form-group">
-                            <h6>Ingresa tus datos</h6>
-                            <hr>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="fiName" placeholder="Ingresa tu nombre">
-                                <label for="fiName">Ingresa tu nombre</label>
+                            <h5>Ingresa tus datos</h5>
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="text" class="form-control" id="fiName" placeholder="Ingresa tu nombre">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="form-control" id="fiLastName" placeholder="Ingresa tus apellidos">
+                                </div>
                             </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="fiLastName" placeholder="Ingresa tus apellidos">
-                                <label for="fiLastName">Ingresa tus apellidos</label>
+                            <div class="row">
+                                <div class="col-12">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="Ingresa tu correo">
+                                </div>
                             </div>
-                            <h6>Ingresa tu usuario y contraseña</h6>
-                            <hr>
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput" placeholder="Ingresa tu correo">
-                                <label for="floatingInput">Ingresa tu correo</label>
+                            <div class="row">
+                                <div class="col-12">
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Ingresa tu contraseña">
+                                </div>
                             </div>
-                            <div class="form-floating mb-3">
-                                <input type="password" class="form-control" id="floatingPassword" placeholder="Ingresa tu contraseña">
-                                <label for="floatingPassword">Ingresa tu contraseña</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="password" class="form-control" id="floatingPassword" placeholder="Confirma tu contraseña">
-                                <label for="floatingPassword">Confirma tu contraseña</label>
+                            <div class="row">
+                                <div class="col-12">
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Confirma tu contraseña">
+                                </div>
                             </div>
                         </div>
                     </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span>Registrarme</button>
                 </div>
             </div>
         </div>

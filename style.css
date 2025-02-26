@@ -102,14 +102,39 @@ hr{
     border: 1px solid rgb(255,112,30);
 }
 
-.loginForm button{
+.loginForm button, .registerForm button{
     width: 100%;
     background-color: rgba(255,112,30);
     border-color: rgba(30,30,30);
     color: rgba(30,30,30);
 }
 
-.loginForm button:hover{
+.loginForm button:hover, .registerForm button:hover{
+    background-color: rgb(30, 30, 30);
+    border-color: rgb(255, 112, 30);
+    color: rgb(255, 112, 30);
+}
+
+.col-6{
+    padding: 10px;
+}
+
+.form-group .row{
+    padding: 5px;
+}
+
+.form-group .row button{
+    padding: 10px;
+}
+
+#modalUserRegister .modal-footer button{
+    width: 100%;
+    background-color: rgba(255,112,30);
+    border-color: rgba(30,30,30);
+    color: rgba(30,30,30);
+}
+
+#modalUserRegister .modal-footer button:hover{
     background-color: rgb(30, 30, 30);
     border-color: rgb(255, 112, 30);
     color: rgb(255, 112, 30);
