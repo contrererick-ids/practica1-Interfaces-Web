@@ -22,13 +22,17 @@ nav .d-flex button:hover{
     color: rgb(30, 30, 30);
 }
 
-.dropdown-toggle, .see-more-button, .pagination-products a{
+.dropdown-toggle, .see-more-button, .page-navigation a{
     background-color: rgba(255,112,30);
     border-color: rgba(30,30,30);
     color: rgba(30,30,30);
 }
 
-.pagination-products a:hover{
+.page-navigation{
+    padding: 20px;
+}
+
+.page-navigation a:hover{
     background-color: rgba(230,230,230);
     border-color: rgb(30, 30, 30);
     color: rgb(30,30,30);
@@ -69,9 +73,6 @@ hr{
     object-fit: cover;
 }
 
-.page-navigation{
-    padding: 20px;
-}
 
 .card-title{
     height: 50px;
