@@ -73,7 +73,6 @@ hr{
     object-fit: cover;
 }
 
-
 .card-title{
     height: 50px;
     display: -webkit-box;
@@ -81,6 +80,10 @@ hr{
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.card-board{
+    
 }
 
 .truncate {
