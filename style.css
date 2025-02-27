@@ -69,8 +69,25 @@ hr{
     object-fit: cover;
 }
 
-.pagination-products{
+.page-navigation{
     padding: 20px;
+}
+
+.card-title{
+    height: 50px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Número de líneas antes de truncar */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Número de líneas antes de truncar */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .footer{
@@ -133,7 +150,9 @@ hr{
 }
 
 #shoppingCart img{
-    max-width: 200px;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
     padding: 10px;
 }
 
