@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(218, 80, 0);
+    background-color: rgb(255,112,30);
     margin: 0;
     padding: 0;
 }
@@ -16,6 +16,14 @@ nav .d-flex button:hover{
     color: rgb(40,40,40);
 }
 
+.navbar-main-nav .navbar-brand{
+    font-size: 16pt;
+}
+
+.navbar-main-nav .navbar-navz{
+    font-size: 14pt;
+}
+
 .search-bar-button{
     background-color: rgba(255,112,30);
     border-color: rgb(30, 30, 30);
@@ -23,11 +31,10 @@ nav .d-flex button:hover{
 }
 
 .dropdown-toggle, .see-more-button, .page-navigation a{
-    background-color: rgba(255,112,30);
+    background-color:rgb(255,112,30);
     border-color: rgba(30,30,30);
     color: rgba(30,30,30);
 }
-
 
 hr{
     border: 2px solid rgb(10,10,10);
@@ -35,7 +42,7 @@ hr{
 
 #carouselExampleIndicators{
     width: 100%;
-    max-height: 400px;
+    object-fit: cover;
 }
 
 .carousel-slide-container {
@@ -51,8 +58,43 @@ hr{
     object-fit: cover;
 }
 
+.products-section{
+    padding: 10px;
+    background-color: rgb(230,230,230);
+}
+
+.card-group{
+    width: 100%;
+}
+
+.card-group .row{
+    padding-bottom: 10px;
+}
+
+.card-title{
+    height: 25px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-text:not(.update-info){
+    height: 75px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.update-info{
+    margin-top: 10px;
+}
+
 .card-img-top{
-    max-height: 200px;
+    height: 200px;
     object-fit:cover;
 }
 
@@ -65,38 +107,6 @@ hr{
     border-color: rgb(30, 30, 30);
     color: rgb(30,30,30);
 }
-
-/*
-.products-section{
-    background-color: rgb(230,230,230);
-}
-
-.products-section-title{
-    padding: 10px;
-}
-
-.card-img-top{
-    height: 250px;
-    object-fit: cover;
-}
-
-.card-title{
-    height: 50px;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.truncate {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-*/
 
 .footer{
     background-color: rgb(30,30,30);
